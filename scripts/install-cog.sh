@@ -17,7 +17,7 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
         sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
         sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 sudo apt-get update
-apt-get download nvidia-container-toolkit libnvidia-container-tools libnvidia-container1 nvidia-docker2
+apt-get download nvidia-container-toolkit-base nvidia-container-toolkit libnvidia-container-tools libnvidia-container1 nvidia-docker2
 sudo dpkg  --ignore-depends=docker-ce -i *.deb
 
 popd
