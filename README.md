@@ -5,5 +5,5 @@
 Run the following to install Cog and nvidia-docker:
 
 ```
-curl https://storage.googleapis.com/replicate-public/codespaces/install-cog.sh | bash
+curl https://replicate.github.io/codespaces/scripts/install-cog.sh | bash
 ```
