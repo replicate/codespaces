@@ -23,5 +23,6 @@ sudo dpkg  --ignore-depends=docker-ce -i *.deb
 popd
 
 # restart docker
+sudo rm /var/run/docker.pid
 sudo killall -9 dockerd
 sudo bash -c "nohup dockerd &>/var/log/dockerd.log &"
