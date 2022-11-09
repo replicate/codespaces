@@ -1,8 +1,8 @@
 # Replicate Codespaces scripts
 
-## Install Cog
+This is a convenience script to installing [Cog](https://github.com/replicate/cog) and nvidia-docker on GitHub's GPU Codespaces.
 
-Run the following to install Cog and nvidia-docker:
+To use it, run the following from the terminal in your Codespaces instance:
 
 ```
 curl https://replicate.github.io/codespaces/scripts/install-cog.sh | bash
